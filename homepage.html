@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <title>Mahallah Siddiq Information Hub</title>
+</head>
+<header onload="document.body.style.opacity='1'">
+    <div id="headerDiv1">
+        <img src="Mahallah Siddiq Logo.jpg" alt="Mahallah Siddiq Logo" id="siddiqLogo" height="100">
+            <h1 id="titleSiddiq">Mahallah Siddiq<br>Information Hub</h1>
+    </div>
+    <hr>
+    <nav id="headerNav">
+        <ul id="headerNavList">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="S&S.html">Services & Support</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body onload="document.body.style.opacity='1'">
+    <h2 id="welcomeText">
+        أَهْلًا وَسَهْلًا
+    <br>Welcome to Mahallah Siddiq Information Hub
+    </h2>
+
+    <div id="fotoramaDiv" data-autoplay="true">
+        <img src="galleryphotos/siddiq1.jpg" alt="">
+        <img src="galleryphotos/siddiq2.jpg" alt="">
+        <img src="galleryphotos/siddiq3.jpg" alt="">
+        <img src="galleryphotos/siddiq4.jpg" alt="">
+        <img src="galleryphotos/siddiq6.jpg" alt="">
+        <img src="galleryphotos/siddiq7.jpg" alt="">
+        <img src="galleryphotos/siddiq8.jpg" alt="">
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+          $('#fotoramaDiv').fotorama({
+            width: 1500,  // Adjust the width
+            height: 600, // Adjust the height
+            fit: 'cover',
+            loop: true
+          });
+        });
+    </script>
+      
+    <h3 id="siddiqNewsText">Siddiq News</h3>
+    <div id="siddiqNewsImgs">
+        <a href="newspage1.html">
+            <div class="siddiqImgsDiv">
+                <img src="galleryphotos/crop1.jpeg" alt="">
+                <span>News Title</span>
+            </div>
+        </a>
+        <a href="newspage1.html">
+            <div class="siddiqImgsDiv">
+                <img src="galleryphotos/photo11.jpg" alt="">
+                <span>News Title</span>
+            </div>
+        </a>
+        <a href="newspage1.html">
+            <div class="siddiqImgsDiv">
+                <img src="galleryphotos/bola1.jpeg" alt="">
+                <span>News Title</span>
+            </div>
+        </a>
+    </div>
+
+    <div id="hotw">
+        <img src="galleryphotos/mosque2.jpg">
+            <div id="hotwText">
+                <h3>Hadith of The Week</h3>
+                <p>Narrated Abu Sa`id Al-Khudri: Somebody asked,
+                    <br><br>
+                “O Allah’s Messenger (peace be upon him)! Who is the best among the people?” Allah’s Messenger (peace be upon him) replied “A believer who strives his utmost in Allah’s Cause with his life and property.” They asked, “Who is next?” He replied, “A believer who stays in one of the mountain paths worshipping Allah and leaving the people secure from his mischief.”
+                    <br><br>
+                Sahih al-Bukhari, Vol. 4, Book 56, Hadith 5
+                </p>
+            </div>
+    </div>
+    
+</body>
+<footer onload="document.body.style.opacity='1'">
+    <hr>
+    <h4>Mahallah Siddiq Information Hub</h4>
+    <div>Mahallah Office Contact : 011-58719461</div>
+    <div id="siddiqEmail">mahallahsiddiq@iium.edu.my</div>
+    <div>
+        <a href="https://www.facebook.com/mahallah.assiddiq/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/mahallah_siddiq" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/mahallahsiddiq/" class="fa fa-instagram"></a>
+    </div>
+</footer>
+
+</html>

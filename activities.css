@@ -1,0 +1,213 @@
+body{
+    font-family: Poppins;
+}
+
+h1{
+    text-align: center;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.content h4{
+    margin-bottom: 0;
+}
+
+.news a img{
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.news a div{
+    border-style: groove;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.news a div:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    border-style: groove;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.news a div:not(:hover){
+    transform: scale(1.0);
+    transition-duration: 0.5s;
+    border-style: groove;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.news a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 670px) {
+    .news a{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+        border-radius: 10px;
+    }
+}
+
+#siddiqNews{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#siddiqGallery{
+    display: flex;
+    flex-direction: column;
+}
+
+#siddiqGallery a:hover{
+    cursor: default;
+}
+
+#galleryPhotos{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "jan feb mar apr"
+    "may jun jul aug"
+    "sep oct nov dec";
+}
+
+@media (max-width: 800px) {
+    #galleryPhotos{
+        position: relative;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "jan feb mar"
+        "apr may jun" 
+        "jul aug sep"
+        "oct nov dec";
+    }
+}
+
+@media (max-width: 555px) {
+    #galleryPhotos{
+        position: relative;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "jan feb" "mar apr"
+        "may jun" "jul aug"
+        "sep oct" "nov dec";
+    }
+}
+
+.months{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.months img{
+    height: 150px;
+    display: block;
+}
+
+.months:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    cursor:pointer;
+}
+
+.months:not(:hover){
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+
+.months p{
+    font-size: 32px;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #171616, 5px 4px 0px rgba(0,0,0,0.15);
+    position: absolute;
+    font-weight: bold;
+    top: 60%; /* Adjust this value to vertically center the text */
+    left: 25%; /* Adjust this value to horizontally center the text */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+}
+
+#jan{
+    grid-area: jan;
+}
+
+#feb{
+    grid-area: feb;
+}
+
+#mar{
+    grid-area: mar;
+}
+
+#apr{
+    grid-area: apr;
+}
+
+#may{
+    grid-area: may;
+}
+
+#jun{
+    grid-area: jun;
+}
+
+#jul{
+    grid-area: jul;
+}
+
+#aug{
+    grid-area: aug;
+}
+
+#sep{
+    grid-area: sep;
+}
+
+#oct{
+    grid-area: oct;
+}
+
+#nov{
+    grid-area: nov;
+}
+
+#dec{
+    grid-area: dec;
+}

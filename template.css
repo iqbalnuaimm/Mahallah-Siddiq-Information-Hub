@@ -1,0 +1,74 @@
+body{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+nav ul li a{
+ color: black;
+ text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav ul li a:not(:hover){
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#headerDiv1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+#headerNav{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 12px;
+}
+#titleSiddiq{
+    margin: 0px;
+    font-family: Poppins;
+    font-weight: 1000;
+}
+#headerNavList{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+footer{
+    font-family: Poppins;
+    font-size: small;
+    text-align: center;
+}
+#siddiqEmail{
+    font-weight: 300;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 100px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    color: black;
+  }
+  .fa-twitter {
+    color: black;
+  }
+  .fa-instagram {
+    color: black;
+  }

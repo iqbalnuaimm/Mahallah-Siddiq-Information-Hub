@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<header onload="document.body.style.opacity='1'">
+    <div id="headerDiv1">
+        <img src="Mahallah Siddiq Logo.jpg" alt="Mahallah Siddiq Logo" id="siddiqLogo" height="100">
+            <h1 id="titleSiddiq">Mahallah Siddiq<br>Information Hub</h1>
+    </div>
+    <hr>
+    <nav id="headerNav">
+        <ul id="headerNavList">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="S&S.html">Services & Support</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<body onload="document.body.style.opacity='1'">
+    <section>
+        <div class="contact-container">
+            <div class="form-container">
+                <h3>Feedback</h3>
+                <form action="" class="contact-form">
+                   <input type="text" placeholder="Your Name" required>
+                   <input type="email" name="" id="" placeholder="Enter Your Email...">
+                   <textarea name="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                   <button class="send-button" onclick="myFunction()">SEND</button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.410260372389!2d101.73851769999999!3d3.2477493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc38e851de5943%3A0x5c5e6a6be455728!2sMahallah%20Siddiq!5e0!3m2!1sen!2smy!4v1704530759718!5m2!1sen!2smy"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+</body>
+<footer onload="document.body.style.opacity='1'">
+    <hr>
+    <h4>Mahallah Siddiq Information Hub</h4>
+    <div>Mahallah Office Contact : 011-58719461</div>
+    <div id="siddiqEmail">mahallahsiddiq@iium.edu.my</div>
+    <div>
+        <a href="https://www.facebook.com/mahallah.assiddiq/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/mahallah_siddiq" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/mahallahsiddiq/" class="fa fa-instagram"></a>
+    </div>
+</footer>
+<script>
+    function myFunction() {
+      var txt;
+      if (confirm("Feedback Has Been Send !")) {
+        txt = "You pressed OK!";
+      } else {
+        txt = "You pressed Cancel!";
+      }
+    }
+    </script>
+</html>

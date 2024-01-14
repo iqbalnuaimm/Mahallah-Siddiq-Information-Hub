@@ -1,0 +1,34 @@
+#galleryMonth{
+    text-align: center;
+    font-family: Poppins;
+}
+
+.photo-column{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-row img{
+    margin: 10px 10px;
+    width: 300px;
+}
+
+@media (max-width: 900px) {
+    .photo-row img{
+        margin: 10px 10px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 650px) {
+    .photo-row img{
+        margin: 10px 10px;
+        width: 100px;
+    }
+}
